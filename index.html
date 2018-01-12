@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CarrotyWeather</title>
+
+	<!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+
+	<!-- iOS, 크롬 브라우저 용 웹클립 아이콘 설정 -->
+  <link rel="apple-touch-icon" sizes="76x76" href="images/logo/logo.png"/>
+  <link rel="apple-touch-icon" sizes="120x120" href="images/logo/logo.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="images/logo/logo.png"/>
+
+	<!--  안드로이드 크롬 브라우저 용 웹클립 아이콘 설정 -->
+  <link rel="shortcut icon" sizes="196x196" href="images/logo/logo.png"/>
+
+  <!-- iOS 전용 상태바 모습 설정 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+  <!-- 뷰포트 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- jquery -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+  <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+  <!-- css -->
+	<style type="text/css">
+
+	body{
+		background-image: url("res/images/firstBackGround/background.jpg");
+		background-repeat: no-repeat;
+		background-size:cover;
+		height: 100%
+	}
+
+
+	}
+
+	div.first{
+		margin: auto;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+
+	p.title{
+  	font-size: 2.5em;
+		color: white;
+	}
+
+	</style>
+
+
+
+	<!-- 자바스크립트 코딩 -->
+	<script type="text/javascript">
+	function goMain(){
+	location.href="login.html";
+	}
+
+	function changePage(){
+	setTimeout(goMain, 3000);
+	}
+
+	</script>
+
+</head>
+<body onload="changePage()">
+<div class="first" style="text-align:center">
+	<p class="title">CarrotyWeather</p>
+</div>
+
+
+</body>
+</html>
